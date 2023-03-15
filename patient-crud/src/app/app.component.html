@@ -1,19 +1,45 @@
-<mat-toolbar color="primary">
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with menu icon"
-  >
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>My App</span>
-  <span class="example-spacer"></span>
-  <button
-    mat-icon-button
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
-  >
-    <mat-icon>favorite</mat-icon>
-  </button></mat-toolbar
->
+<mat-toolbar class="flex-header" color="primary">
+  <section class="nav-search">
+    <img width="120" src="../assets/img/logo.png" alt="" />
+    <form class="search-bar-container">
+      <span class="search-bar">
+        <input
+          type="text"
+          placeholder="Buscar produtos, marcas e muito mais..."
+          name="search"
+        />
+        <button>
+          <mat-icon>search</mat-icon>
+        </button>
+      </span>
+    </form>
+    <a href="#"><mat-icon>sell</mat-icon> Oferta por tempo limitado</a>
+  </section>
+  <section class="nav-menu">
+    <div class="location-header">
+      <mat-icon>location_on</mat-icon>
+      <div>Eviar para Alejandro <br />Rua Villa Maria, Fo...</div>
+    </div>
+    <ul>
+      <li>Categorias</li>
+      <li>Ofertas do dia</li>
+      <li>Histórico</li>
+      <li>Supermercado</li>
+      <li>Moda</li>
+      <li>Vender</li>
+      <li>Contato</li>
+    </ul>
+    <ul>
+      <li>
+        <mat-icon>account_circle</mat-icon>
+        Alejandro
+      </li>
+      <li>Compras</li>
+      <li>Favoritos</li>
+      <mat-icon>notifications</mat-icon>
+      <mat-icon>shopping_cart</mat-icon>
+    </ul>
+  </section>
+</mat-toolbar>
+
 <router-outlet></router-outlet>
