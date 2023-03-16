@@ -1,7 +1,7 @@
 @import '@angular/material/theming';
 @include mat-core();
 
-$custom-app-primary: mat-palette($mat-yellow, A200);
+$custom-app-primary: mat-palette($mat-light-blue, A400);
 $custom-app-secondary: mat-palette($mat-light-blue, A400);
 $custom-app-warn: mat-palette($mat-orange, 900);
 

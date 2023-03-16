@@ -2,104 +2,59 @@
     height: auto;
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    padding: 1rem 0rem 0rem 0rem;
-    
-    // First Container Header --Start
-    .nav-search{
+   justify-content: space-between;
+
+    ul li{
         display: flex;
 
-        align-items: center;
-        justify-content: space-between;
-
-        gap: 3rem;
-
-        // background-color: green;
-
-
-         // Search bar Container --Start
-         .search-bar-container{
-            display: flex;
-            // background-color: red;
-
-            .search-bar{
-                width: 80vh;
-                display: flex;
-
-                background-color: #fff;
-                
-                padding: .3rem;
-
-                box-shadow: 0px .5px 2px 0px rgba(0,0,0,0.75);
-            }
-            .search-bar input{
-                width: 100%;
-                border: none;
-            }
-            .search-bar button{
-                background-color: #fff;
-                color: #808080;
-
-                border: none;
-                border-left: 1px solid #808080;
-
-            }
-         }
-         // Search bar Container --End
-         // Link Sale --Start
-         a{
-            color: #000;
-            font-size: 1.6rem;
-
-            text-decoration: none;
-
-            margin-left: 5rem;
-
-         }
-         // Link Sale --End
+       justify-content: center;
     }
-    // First Container Header --End
 
-    // Second Container Header --Start
-    .nav-menu {
+
+    ul li img{
+        border-radius: 50%;
+        border: .2rem solid #fff;
+        
+    }
+
+    div ul li{
         display: flex;
 
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        font-size: 1.5rem;
+        justify-content: center;
 
-        font-size: 1rem;
-        gap: 3rem;
-
-
-            .location-header{
-                display: flex;
-                align-items: center;
-               
-                div{
-                    
-                    font-size: 1rem;
-                    line-height: 1.2rem;
-                }
-            }
-   
-            ul {
-            display: flex;
-
-
-            list-style: none;
-            gap: 2rem;   
-            } 
-            ul li:first-child{
-                display: flex;
-                align-items: center;
-            }
     }
-    // Second Container Header --End
-
-   
     
+    ul{
+        display: flex;
+        gap: 3rem;  
+        
+        list-style: none;
+       
+    }
+
+    ul li a{
+        text-decoration: none;
+
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: #eeeeee;
+
+        transition: .2s;
+        
+    }
+    ul li a:hover{
+        
+        display:inline-block;
+        color: #fff;
+
+        font-weight: 500;
+
+        font-size: 1.8rem;
+
+    }
 }
 
 

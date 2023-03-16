@@ -1,45 +1,34 @@
 <mat-toolbar class="flex-header" color="primary">
-  <section class="nav-search">
-    <img width="120" src="../assets/img/logo.png" alt="" />
-    <form class="search-bar-container">
-      <span class="search-bar">
-        <input
-          type="text"
-          placeholder="Buscar produtos, marcas e muito mais..."
-          name="search"
-        />
-        <button>
-          <mat-icon>search</mat-icon>
-        </button>
-      </span>
-    </form>
-    <a href="#"><mat-icon>sell</mat-icon> Oferta por tempo limitado</a>
-  </section>
-  <section class="nav-menu">
-    <div class="location-header">
-      <mat-icon>location_on</mat-icon>
-      <div>Eviar para Alejandro <br />Rua Villa Maria, Fo...</div>
-    </div>
-    <ul>
-      <li>Categorias</li>
-      <li>Ofertas do dia</li>
-      <li>Histórico</li>
-      <li>Supermercado</li>
-      <li>Moda</li>
-      <li>Vender</li>
-      <li>Contato</li>
-    </ul>
+  <div>
+    <img
+      width="125"
+      class="logo-img"
+      src="../assets/img/PatientControll.png"
+      alt=""
+    />
+  </div>
+  <ul>
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">Register</a>
+    </li>
+    <li>
+      <a href="#">See All Users</a>
+    </li>
+  </ul>
+  <div>
     <ul>
       <li>
-        <mat-icon>account_circle</mat-icon>
-        Alejandro
+        <img class="logo-img" src="http://lorempixel.com.br/45/45" alt="" />
       </li>
-      <li>Compras</li>
-      <li>Favoritos</li>
-      <mat-icon>notifications</mat-icon>
-      <mat-icon>shopping_cart</mat-icon>
+      <li>
+        <span>Robson Do Wanderson</span>
+        <mat-icon>logout</mat-icon>
+      </li>
     </ul>
-  </section>
+  </div>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
