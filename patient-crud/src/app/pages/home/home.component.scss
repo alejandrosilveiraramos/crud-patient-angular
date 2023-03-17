@@ -1,10 +1,170 @@
-@use '@angular/material' as mat;
+section.first-container{
 
-mat-card{
+    display: flex;
+
+    justify-content: center;
+
+    mat-card{
+        margin-top: 5rem;
+        display: flex;
+       
+        align-items: center;
+   
+           
+        width: 65%;
+        height: auto;
+        background-color: #00B0FF;
+
+        box-shadow: 0px 15px 30px -10px rgba(0,0,0,0.75);
+
+        mat-card-header{
+            display: flex;
+            flex-direction: column;
+
+            line-height: 2;
+            text-align: center;
+
+            h2{
+                margin: 4rem;
+                color: #fff;
+
+                font-size: 4rem;
+                
+
+                b{
+                    color: #000;
+                }
+            }
+
+        }
+
+        mat-card-content {
+           
+            display: flex;
+            justify-content: space-between;
+
+
+            div{
+
+                display: flex;
+                flex-direction: column;         
+
+                color: #fff;
+
+
+                text-align: center;
+
+            }
+
+            div.text-div{
+                margin-top: 2rem;
+                width: 40%;
+                height: 80%;
+                display: flex;
+                
+                p{
+                    font-size: 2rem;
+                    text-align: left;
+                    margin-top: 3rem;
+
+
+                    span{
+                        color: #000;
+                    }
+                }
+                span.line-button{
+                    background-color: transparent;
+
+                    display: flex;
+                    margin: 1rem 7rem;
+
+                    align-items: center;
+                    justify-content: center;
+
+                    padding: 1.2rem ;
+                    
+
+                    border-left: 1px solid #ff5100;
+                    border-right: 1px solid #ff5100;
+                    border-bottom: 1px solid  transparent;
+                    border-top: 1px solid transparent;
+                    border-radius: 5px;
+
+                    transition: .3s;
+
+
+
+                    button{
+                        color: #fff;
+                        background-color: transparent;
+
+                        padding: 1.2rem;
     
- width: 70%;
- height: auto;
- background-color: mat.get-color-from-palette($primary);
+                        border: 1px solid #ff5100;
+                        border-radius: 5px;
+    
+    
+                    }
+
+                }
+                span.line-button:hover{
+                    transform: scale(1.2);
+
+                    display: flex;
+                    margin: 1rem 5rem;
+
+                    align-items: center;
+                    justify-content: center;
+
+                    padding: 1.2rem ;
+                    
+                  
+                    border-color: #ff5100;
+
+
+                    button{
+                        background-color: #ff5100;
+    
+                    }
+
+                }
+               
+
+            }
+
+
+            div.img-div{
+                display: flex;
+
+                flex-direction: column;
+
+                align-items: center;
+
+                width: 50%;
+
+                h4{
+                    font-size: 2rem;
+
+                    background-color: #fff;
+                    color: #000;
+
+                    padding: 1rem;
+                }
+
+                img{
+                    width: 80%;
+
+                    border-radius: 10px;
+                }
+            }
+        }
+
+            
+       }
+       
+
 }
+
+
 
 
